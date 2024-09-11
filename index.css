@@ -1,0 +1,17 @@
+.cart{
+    background-color: rgb(64, 164, 104);
+    border: none;
+    padding: 7px 20px;
+    border-radius: 15px;
+}
+.list{
+    padding: 7px 20px;
+    border: 2px solid;
+    border-radius: 8px;
+    text-transform: uppercase;
+
+}
+.text{
+    border: 2px solid;
+    border-spacing: 5px;
+}

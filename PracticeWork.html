@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Work</title>
+</head>
+<body>
+
+
+    <div class="name">
+        <h1 id="greetings">Bishnupada Kamila</h1>
+    </div>
+    <script>
+        let date = new Date();
+        let currentTime = date.getHours();
+        let Name = 'Bishnupada Kamila'
+        console.log(date.getHours());
+
+
+         
+
+
+
+        if(currentTime>=3 && currentTime<12){
+            document.querySelector('#greetings').innerText=`Good Morning ${Name}`;
+        }else if(currentTime>=12 && currentTime<15){
+            document.querySelector('#greetings').innerText=`Good After Noon ${Name}`;
+        }else if(currentTime>=15 && currentTime<19){
+            document.querySelector('#greetings').innerText=`Good Evening ${Name}`;
+
+        }
+        else{
+            document.querySelector('#greetings').innerText=`Good Night ${Name}`;
+        }
+    </script>
+</body>
+</html>

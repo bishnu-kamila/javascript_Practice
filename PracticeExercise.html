@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Exercise</title>
+    <style>
+        .js-color{
+            background-color: aqua;
+        }
+        .js-grow{
+            height: 100px;
+            width: 180px;
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <button class="myButton">Click-Me</button>
+        </div>
+    </main>
+    <script>
+        // let buttonElement = document.querySelector('.myButton');
+        // let changeCol = ()=>{
+        //     buttonElement.classList.add('js-color');
+        //     buttonElement.classList.add('js-grow');
+
+        // }
+        
+        // buttonElement.addEventListener('click',setTimeout(changeCol,2000));
+
+
+        let arr = [1,2,3,4,5,6,7,8,9];
+        // console.log(arr);
+        let sum=0;
+        arr.forEach(num => sum = sum+num);
+        console.log(sum);
+
+        let squires = arr.map(num=>num*num);
+        
+        
+        
+        console.log(squires);
+
+    </script>
+</body>
+</html>

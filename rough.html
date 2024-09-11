@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=3;
+        let gender='female';
+        let ticketPrice=50;
+
+        if(age<5){
+                ticketPrice='free';
+            }
+        else if(gender==='male'){
+            
+            if(age>=5 && age<=8){
+                ticketPrice=ticketPrice/2
+            }else if(age>65){
+                ticketPrice=30/100*ticketPrice;
+            }
+        }else{
+            
+            if(age>=5 && age<=8){
+                ticketPrice=(50/100*ticketPrice)/2;
+            }else if(age>8 && age<=65){
+                ticketPrice=ticketPrice/2;
+            }
+            else if(age>65){
+                ticketPrice=(30/100*(50/100*ticketPrice));
+            }
+        }
+        console.log(`The final ticket price is ${ticketPrice}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+    <ul>
+        <li class="name">Bishnupada</li>
+    </ul>
+</body>
+<script>
+    let bod = document.querySelector('body')
+    document.querySelector('.name').addEventListener('click',function(e){
+    bod.style.backgroundColor='red'
+    let rmv = e.target
+    rmv.remove()
+    })
+</script>
+</html>

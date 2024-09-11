@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .press-me{
+            color: rgb(9, 9, 245);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <button class="cart" onclick="item++ 
+            document.querySelector('#bag-item').innerText= `Your Bag has  ${item} Item`">Add to Bag</button>
+            <button class="list" onclick="item-- 
+            document.querySelector('#bag-item').innerText= `Your Bag has  ${item} Item`">Move to Wishlist</button>
+            <button class="cart" onclick="item+=2 
+            document.querySelector('#bag-item').innerText= `Your Bag has  ${item} Item`">Add 1+1 Sale Item</button>
+        </div>
+        <h1 id="bag-item"></h1>
+        
+        
+    </main>
+    <script>
+        let item = 0;
+        document.querySelector('#bag-item').innerText= `Your Bag has  ${item} Item`;
+        
+    </script>
+    
+</body>
+</html>

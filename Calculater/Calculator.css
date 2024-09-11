@@ -1,0 +1,29 @@
+.cal{
+    border: solid;
+    width: 300px;
+    border-radius: 5px;
+}
+#display{
+    border: solid;
+    height: 60px;
+    font-size: 22px;
+    border-radius: 2px;
+    margin: 10px;
+
+}
+/* .key{
+    border: solid;
+    padding: 2px 2px;
+    width: 500px;
+    
+} */
+.button{
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    font-size: x-large;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}

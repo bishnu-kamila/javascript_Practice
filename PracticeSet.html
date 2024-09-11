@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Set</title>
+    <style>
+        button:hover{
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan , 0 0 50px cyan , 0 0 100px cyan , 0 0 200px cyan;
+        }
+        
+        .btn{
+        
+            text-align: center;
+            border: solid;
+            border-radius: 20px;
+            padding: 100px 5px;
+            margin-top: 100px;
+            margin-left: 500px;
+            margin-right: 500px;
+            background-color: rgb(0, 0, 0);
+            
+        }
+        .myButton{
+            height: 50px;
+            width: 100px;
+            border: none;
+            border-radius: 7px;
+            font-size: 20px;
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+            
+        }
+        .js-odd{
+            background-color: blanchedalmond;
+        }
+        .js-even{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="btn">
+            <Button class="myButton" onclick="clickCount()">Click Me</Button>
+            <h1 class="text"></h1>
+        </div>
+    </main>
+
+    <script>
+        let count=localStorage.getItem('count') || 0;
+        
+       function clickCount(){
+        count++;
+        localStorage.setItem('count',count);
+        updateButton();
+       }
+
+       function updateButton(){
+        let bttn = document.querySelector('.myButton');
+        document.querySelector('.text').innerText = `You clicked the Button ${count} Times`;
+
+        if(count%2===0){
+            bttn.classList.remove('js-odd');
+            bttn.classList.add('js-even');
+        }else{
+            bttn.classList.remove('js-even');
+            bttn.classList.add('js-odd');
+        }
+       
+       }
+
+       updateButton();  
+
+    </script>
+</body>
+</html>

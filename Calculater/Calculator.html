@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="cal">
+            <input type="text" id="display" >
+            
+                <div class="btn">
+                <button class="button" onclick="firstNumber=''
+                print();
+                ">AC</button>
+                <button class="button" onclick="firstNumber=Math.floor(firstNumber/10);
+                print();">C</button>
+                <button class="button" onclick="firstNumber=firstNumber+'%'
+                print();">%</button>
+                <button class="button" onclick="firstNumber=firstNumber+'/'
+                document.querySelector('#display').value=firstNumber;">/</button>
+                </div>
+                <div class="btn">
+                <button class="button" onclick="firstNumber=firstNumber+'7'
+                document.querySelector('#display').value=firstNumber;">7</button>
+                <button class="button" onclick="firstNumber=firstNumber+'8'
+                document.querySelector('#display').value=firstNumber;">8</button>
+                <button class="button" onclick="firstNumber=firstNumber+'9'
+                document.querySelector('#display').value=firstNumber;">9</button>
+                <button class="button" onclick="firstNumber=firstNumber+'*'
+                document.querySelector('#display').value=firstNumber;">*</button>
+                </div>
+                <div class="btn">
+                    <button class="button" onclick="firstNumber=firstNumber+'4'
+                    document.querySelector('#display').value=firstNumber;">4</button>
+                <button class="button" onclick="firstNumber=firstNumber+'5'
+                document.querySelector('#display').value=firstNumber;">5</button>
+                <button class="button" onclick="firstNumber=firstNumber+'6'
+                document.querySelector('#display').value=firstNumber;">6</button>
+                <button class="button" onclick="firstNumber=firstNumber+'-'
+                document.querySelector('#display').value=firstNumber;">-</button>
+                </div>
+                
+                
+                
+                <div class="btn">
+                    <button class="button" onclick="firstNumber=firstNumber+'1'
+                    document.querySelector('#display').value=firstNumber;">1</button>
+                <button class="button" onclick="firstNumber=firstNumber+'2'
+                document.querySelector('#display').value=firstNumber;">2</button>
+                <button class="button" onclick="firstNumber=firstNumber+'3'
+                document.querySelector('#display').value=firstNumber;">3</button>
+                <button class="button" onclick="firstNumber=firstNumber+'+'
+                document.querySelector('#display').value=firstNumber;">+</button>
+                </div>
+                
+                <div class="btn">
+                    <button class="button" onclick="firstNumber=firstNumber+'.'
+                    document.querySelector('#display').value=firstNumber;">.</button>
+                <button class="button" onclick="firstNumber=firstNumber+'0'
+                document.querySelector('#display').value=firstNumber;">0</button>
+                <button class="button" onclick="
+                let result=eval(firstNumber);
+                firstNumber=result;
+                document.querySelector('#display').value=firstNumber;">=</button>
+                </div>
+            </div>
+        
+    </main>
+
+    <script>
+        let firstNumber = '';
+        function print() {
+            document.querySelector('#display').value=firstNumber;
+        }
+        print();
+        
+    </script>
+</body>
+</html>

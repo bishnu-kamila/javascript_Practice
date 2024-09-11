@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <div class="parent">
+        <h1 >Bishnupada Kamila</h1>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    const child =parent.children[1]
+    parent.style.color = "blue"
+    child.innerHTML = 'Holiday'
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild); //Moving Parents to child
+
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    const mvparent = dayOne.parentElement
+    console.log(mvparent);
+    console.log(dayOne.nextElementSibling);
+
+
+    console.log("Nodes: " , parent.childNodes);
+
+</script>
+</html>

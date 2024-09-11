@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <h1>Bishnupada Kamila</h1>
+    <button id="cancel">Cancel</button>
+</body>
+<script>
+    function changeName() {
+        document.querySelector('h1').innerHTML="Sushree Ranjita Rout"
+    }
+    const btn = document.querySelector('#cancel').addEventListener('click',function(){
+        
+        setTimeout(changeName,2000)
+    })
+</script>
+</html>
