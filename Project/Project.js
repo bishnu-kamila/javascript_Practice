@@ -24,3 +24,8 @@ button4.addEventListener('click',function(b){
         body.style.backgroundColor=b.target.id
     }
 })
+button5.addEventListener('click',function(b){
+    if(b.target.id==='red'){
+        body.style.backgroundColor=b.target.id
+    }
+})
